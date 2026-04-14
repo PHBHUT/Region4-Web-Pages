@@ -333,11 +333,15 @@
       margin: 0 auto;
     }
 
+
 .speaker-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  background-color: #fdf0e6; /* soft neutral background */
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;     /* key: no crop */
+  object-position: center 20% !important; /* lifts face upward */
+  background: var(--color-accent-light);
+  border-radius: 50%;
+  display: block;
 }
 
     @media (min-width: 768px) {
